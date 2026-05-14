@@ -1,0 +1,76 @@
+/* src/pages/Landing/Landing.css */
+.landing-wrapper {
+    background-color: #f8fafc;
+    min-height: 100vh;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background: white;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.brand-name {
+    font-size: 26px;
+    font-weight: 800;
+    color: #075e54;
+    letter-spacing: -1px;
+}
+
+.login-trigger-btn {
+    background-color: #075e54;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.login-trigger-btn:hover {
+    background-color: #128c7e;
+    transform: translateY(-2px);
+}
+
+.hero-main {
+    padding: 100px 8%;
+    background: linear-gradient(135deg, #075e54 0%, #054d44 100%);
+    color: white;
+    text-align: left;
+}
+
+.hero-main h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+
+.org-info-section {
+    padding: 60px 8%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    background: white;
+}
+.features-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 60px 8%;
+    background-color: white;
+}
+
+.feature-item {
+    padding: 30px;
+    border-radius: 15px;
+    background-color: #f1f5f9;
+    border-left: 5px solid #075e54;
+}
+
+.feature-item h2 {
+    color: #075e54;
+    margin-top: 0;
+}

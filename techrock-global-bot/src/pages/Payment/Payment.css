@@ -1,0 +1,196 @@
+/* Payment.css */
+:root {
+    --primary-blue: #2563eb;
+    --bg-light: #f3f4f6;
+    --white: #ffffff;
+    --text-dark: #111827;
+    --red-accent: #dc2626;
+    --green-accent: #16a34a;
+}
+
+.payment-page {
+    background-color: var(--bg-light);
+    min-height: 100vh;
+    padding: 20px 40px;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Header Section */
+.payment-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 30px;
+    background: var(--white);
+    padding: 15px 25px;
+    border-radius: 12px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.back-btn {
+    background: #1f2937;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.2s;
+}
+
+.back-btn:hover {
+    background: #374151;
+}
+
+.header-info h1 {
+    margin: 0;
+    font-size: 24px;
+    color: var(--text-dark);
+}
+
+.header-info p {
+    margin: 5px 0 0;
+    color: #6b7280;
+}
+
+.header-info span {
+    color: var(--primary-blue);
+    font-weight: 700;
+}
+
+/* Main Grid Layout */
+.payment-grid {
+    display: grid;
+    grid-template-columns: 1fr 320px;
+    gap: 25px;
+}
+
+/* Cards Styling */
+.method-card, .ledger-card {
+    background: var(--white);
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    margin-bottom: 25px;
+}
+
+.method-tabs {
+    display: flex;
+    gap: 12px;
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+
+.method-tabs button {
+    padding: 10px 20px;
+    border: 1px solid #e5e7eb;
+    background: #f9fafb;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.method-tabs button.active {
+    background: #1f2937;
+    color: white;
+    border-color: #1f2937;
+}
+
+/* Display Area */
+.method-display {
+    background: #f8fafc;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    border: 2px dashed #e2e8f0;
+}
+
+.qr-box img {
+    border-radius: 10px;
+    padding: 10px;
+    background: white;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.detail-box p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Table Styling */
+.ledger-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.ledger-table th {
+    background: #f9fafb;
+    padding: 12px;
+    text-align: left;
+    color: #4b5563;
+    font-size: 14px;
+}
+
+.ledger-table td {
+    padding: 15px 12px;
+    border-bottom: 1px solid #f3f4f6;
+    font-size: 15px;
+}
+
+.red { color: var(--red-accent); font-weight: bold; }
+.green { color: var(--green-accent); font-weight: bold; }
+
+/* Sidebar Stats */
+.stat-box {
+    padding: 25px;
+    border-radius: 16px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.red-bg {
+    background: linear-gradient(135deg, #ef4444, #b91c1c);
+}
+
+.green-bg {
+    background: linear-gradient(135deg, #10b981, #059669);
+}
+
+.stat-box span {
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+.stat-box h2 {
+    margin: 10px 0 0;
+    font-size: 28px;
+}
+
+/* Action Button */
+.pdf-download-btn {
+    width: 100%;
+    padding: 18px;
+    background: #0ea5e9;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 4px 14px 0 rgba(14, 165, 233, 0.4);
+    transition: 0.3s;
+}
+
+.pdf-download-btn:hover {
+    background: #0284c7;
+    transform: translateY(-2px);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .payment-grid {
+        grid-template-columns: 1fr;
+    }
+}

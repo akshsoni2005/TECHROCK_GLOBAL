@@ -1,0 +1,59 @@
+/* src/pages/Hub/DashboardHub.css */
+.premium-hub {
+    background-color: #0b0f19; /* Ekdam solid dark background */
+    min-height: 100vh;
+    color: white;
+    font-family: 'Segoe UI', Roboto, sans-serif;
+}
+
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 10%;
+    background: #111827;
+}
+
+.logo { font-weight: bold; color: #38bdf8; font-size: 1.1rem; }
+.logout-btn { background: #334155; color: white; border: none; padding: 5px 15px; border-radius: 4px; cursor: pointer; }
+
+.hero-header {
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(to bottom, #111827, #0b0f19);
+}
+
+.hero-header h1 { font-size: 2.5rem; margin: 0; }
+.subtitle { color: #94a3b8; margin-top: 10px; }
+
+.main-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 0 10%;
+    margin-top: 20px;
+}
+
+.solid-card {
+    background: #1e293b;
+    padding: 40px 20px;
+    border-radius: 15px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+    border: 1px solid #334155;
+}
+
+.solid-card:hover { transform: translateY(-5px); border-color: #38bdf8; }
+
+.full-width { grid-column: span 2; border: 1.5px dashed #38bdf8; }
+
+.icon { font-size: 3rem; margin-bottom: 15px; }
+.icons-combined { display: flex; justify-content: center; align-items: center; gap: 20px; font-size: 2.5rem; margin-bottom: 15px; }
+.v-divider { width: 1px; height: 30px; background: #334155; }
+
+/* Colors */
+.chat-theme .icon { color: #22c55e; }
+.pay-theme .icon { color: #f59e0b; }
+.insights-theme h2 { color: #38bdf8; }
+
+.footer-simple { text-align: center; padding: 50px; color: #475569; font-size: 0.8rem; }
